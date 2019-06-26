@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".fragments.Fragment_Animal">
+
+    <androidx.recyclerview.widget.RecyclerView
+
+            android:padding="15dp"
+            app:cardCornerRadius="@dimen/cardview_compat_inset_shadow"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            android:id="@+id/rv_raza"
+            android:layout_width="366dp"
+            android:layout_height="545dp" android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp" android:layout_marginEnd="25dp" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="21dp" android:layout_alignParentStart="true" android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" android:layout_alignParentLeft="true"/>
+    <ImageView
+            android:src="@drawable/icono_doki"
+            android:layout_width="172dp"
+            android:layout_height="130dp" android:id="@+id/imageView2" android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="203dp" android:layout_marginEnd="203dp"
+            android:layout_alignParentStart="true" android:layout_marginLeft="35dp" android:layout_marginStart="35dp"
+            android:layout_alignParentLeft="true" android:layout_above="@+id/rv_raza"
+            android:layout_marginBottom="15dp" android:layout_marginTop="20dp" android:layout_alignParentTop="true"
+            />
+    <TextView
+            android:text="Razas"
+            android:layout_width="143dp"
+            android:gravity="center"
+            android:layout_height="95dp" android:id="@+id/textView3" android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="41dp" android:layout_marginEnd="41dp"
+            android:layout_alignParentStart="true" android:layout_marginLeft="226dp" android:layout_marginStart="226dp"
+            android:layout_alignParentLeft="true" android:layout_marginTop="39dp" android:layout_alignParentTop="true"
+            app:fontFamily="cursive" android:textSize="50sp"/>
+</RelativeLayout>
