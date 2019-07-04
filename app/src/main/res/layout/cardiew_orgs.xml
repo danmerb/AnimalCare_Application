@@ -1,68 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp"
-        android:background="#fcfcfc"
-        android:id="@+id/ll">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fcfcfc"
+              android:orientation="vertical"
+              android:padding="10dp">
 
 
     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_width="347dp"
-            android:layout_height="263dp">
+            android:orientation="horizontal">
 
 
         <androidx.cardview.widget.CardView
-                android:layout_width="350dp"
-
-                app:cardCornerRadius="40dp"
-                app:cardElevation="@dimen/cardview_default_elevation"
-                app:cardBackgroundColor="@color/backgroundcolor"
-                android:layout_height="230dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-        >
+                app:cardBackgroundColor="@color/backgroundcolor"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="@dimen/cardview_default_elevation">
 
 
             <LinearLayout
-
-                    android:layout_width="339dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
                     android:gravity="center"
-
-            >
+                    android:orientation="vertical" android:layout_margin="10dp">
 
                 <ImageView
                         android:id="@+id/imgv_org"
-                        android:layout_width="180dp"
-                        android:layout_height="97dp"
-                        android:background="@drawable/cercle_org"
-                        android:src="@drawable/icon_curiosity"
-                />
-
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_org"/>
 
                 <TextView
-                        android:layout_width="266dp"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:textStyle="bold"
                         android:id="@+id/tv_nombreOrga"
-                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Organizaciones cuidado animal"/>
-
-
+                        android:gravity="center"
+                        android:text="Veterinaria"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-
     </LinearLayout>
-
-
 </LinearLayout>

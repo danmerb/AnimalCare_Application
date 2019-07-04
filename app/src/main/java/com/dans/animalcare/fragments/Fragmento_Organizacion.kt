@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.*
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dans.animalcare.R
@@ -30,7 +31,7 @@ class Fragmento_Organizacion : Fragment() {
         OrgAdapter = OrgAdapter(emptyList())
 
         recyclerViewOrg.apply {
-            layoutManager = LinearLayoutManager(this@Fragmento_Organizacion.context)
+            layoutManager = GridLayoutManager(this@Fragmento_Organizacion.context, 2)
             adapter = OrgAdapter
         }
 

@@ -36,7 +36,7 @@ class LeyAdapter (var leyes:List<ley_entity>): RecyclerView.Adapter<LeyAdapter.V
         fun bind(ley: ley_entity) = with(itemView){
 
             this.tv_apartado.text=ley.apartado
-            this.tv_articulo.text= "Articulos: " + ley.articulo
+            this.tv_articulo.text= "Artículo: " + ley.articulo
             }
         }
     }

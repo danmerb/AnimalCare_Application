@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dans.animalcare.R
@@ -32,7 +33,7 @@ class Fragment_Animal : Fragment() {
         razaAdapter = RazaAdapter(mutableListOf())
 
         recyclerView_.apply {
-            layoutManager = LinearLayoutManager(this@Fragment_Animal.context)
+            layoutManager = GridLayoutManager(this@Fragment_Animal.context, 2)
             adapter = razaAdapter
         }
 

@@ -9,44 +9,40 @@
 
 
     <TextView
-
             android:text="Leyes"
-            android:layout_width="131dp"
+            android:layout_width="120dp"
             android:gravity="center"
-            android:layout_height="46dp" android:id="@+id/textView7" android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content" android:id="@+id/textView7" android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/rv_leyesMainAct" android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/imageView8"
-            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintVertical_bias="0.695" app:fontFamily="cursive" android:textSize="36sp"/>
+            android:layout_marginTop="85dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:fontFamily="cursive" android:textSize="36sp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="80dp" android:layout_marginRight="80dp"/>
     <ImageView
             android:src="@drawable/icono_ley"
-            android:layout_width="172dp"
+            android:layout_width="139dp"
             android:backgroundTint="@color/backgroundcolor"
-
-            android:layout_height="130dp" android:id="@+id/imageView8" android:layout_alignParentEnd="true"
+            android:layout_height="87dp" android:id="@+id/imageView8" android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true" android:layout_above="@+id/rv_raza"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="64dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="64dp"
-            app:layout_constraintBottom_toTopOf="@+id/rv_leyesMainAct" android:layout_marginBottom="8dp"
-            app:layout_constraintVertical_bias="0.859"/>
+            android:layout_marginTop="65dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_leyesMainAct"
             android:backgroundTint="@color/backgroundcolor"
             android:layout_width="372dp"
             android:layout_height="511dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.926" app:layout_constraintStart_toStartOf="parent"
-    />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="180dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp" android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginBottom="10dp" app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

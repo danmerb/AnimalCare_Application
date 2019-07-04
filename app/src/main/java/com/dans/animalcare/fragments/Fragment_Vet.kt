@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dans.animalcare.R
 import com.dans.animalcare.adapter.VetAdapter
@@ -33,7 +33,7 @@ class Fragment_Vet : Fragment()  {
         vetAdapter = VetAdapter(emptyList())
 
         recyclerView_.apply {
-            layoutManager = LinearLayoutManager(this@Fragment_Vet.context)
+            layoutManager = GridLayoutManager(this@Fragment_Vet.context, 2)
             adapter = vetAdapter
         }
 
